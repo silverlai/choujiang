@@ -1,0 +1,83 @@
+body,
+ul,
+li,
+div,
+span,
+i,
+a,
+img {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+body {
+  font-family: "Hiragino Sans GB W3,微软雅黑";
+  font-size: 24px;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  background: url("../img/bg.jpg") #e4d6f4 no-repeat 0 0;
+  background-size: 100% auto;
+  padding-top: 20.625%;
+}
+.box {
+  position: relative;
+  width: 80.78125%;
+  margin: 0 auto;
+}
+.box .btn {
+  position: absolute;
+  width: 21.66344294%;
+  height: 23.59767892%;
+  background: url("../img/btn-bg.png")  no-repeat 0 0;
+  background-size: 100% 100%;
+  left: 50%;
+  top: 50%;
+  margin-top: -10.83172147%;
+  margin-left: -11.79883946%;
+}
+.start {
+  display: block;
+  width: 90.625%;
+  margin: 0 auto;
+  font-size: 36px;
+  font-weight: bold;
+  color: #121212;
+  background: url("../img/") #ffb417 no-repeat 0 0;
+  border: 0 none;
+  margin-top: 5.46875%;
+}
+.rule {
+  width: 90.625%;
+  margin: 0 auto;
+  margin-top: 3.90625%;
+}
+.rule dt {
+  line-height: 0.52rem;
+  color: #333;
+  font-weight: bold;
+}
+.rule dd {
+  line-height: 0.36rem;
+  color: #666;
+}

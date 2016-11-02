@@ -1,0 +1,28 @@
+@imgSrc:"../img";
+.bg(@imgName,@left,@right,@color){
+    background:url("@{imgSrc}/@{imgName}") @color no-repeat @left @right; 
+}
+.bgsize(@w,@h){
+    background-size:@w @h;
+}
+body,ul,li,div,span,i,a,img{ margin:0; padding:0;}
+li{list-style:none;}
+img{ border:0 none;vertical-align:top;}
+a{text-decoration:none; color:#666;}
+.clearfix{*zoom:1;
+    &:after{
+        content:"."; display:block;height:0;clear:both;visibility:hidden;
+    }
+}
+.per(@var,@var1){
+    @{var}:percentage(@var1);
+}
+body{ font-family:"Hiragino Sans GB W3,微软雅黑"; font-size:24px; max-width:640px; min-width:320px; margin:0 auto;.bg('bg.jpg',0,0,#e4d6f4); .bgsize(100%,auto); .per(padding-top,132/640);}
+.box{position:relative;.per(width,517/640);margin:0 auto;
+    .btn{ position:absolute;.per(width,112/517); .per(height,122/517);.bg('btn-bg.png',0,0,~""); .bgsize(100%,100%); left:50%; top:50%;.per(margin-top,(-(112/2)/517));.per(margin-left,(-(122/2)/517));}
+}
+.start{display: block;.per(width,580/640);margin:0 auto;font-size: 36px;font-weight: bold;color: #121212;.bg('',0,0,#ffb417);border:0 none;.per(margin-top,35/640);}
+.rule{.per(width,580/640);margin: 0 auto;.per(margin-top,25/640);
+    & dt{line-height: 0.52rem;color: #333;font-weight: bold;}
+    & dd{line-height: 0.36rem;color: #666;}
+}
